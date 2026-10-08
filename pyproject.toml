@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "job-applier-agent"
+version = "0.2.0"
+description = "Local, safety-first foundation for a job application agent"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+job-applier = "job_applier.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
